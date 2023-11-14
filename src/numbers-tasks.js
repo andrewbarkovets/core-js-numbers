@@ -34,8 +34,9 @@ function getRectangleArea(width, height) {
  *   3.14 => 19.729201864543903
  *   0    => 0
  */
-function getCircleCircumference(/* radius */) {
-  throw new Error('Not implemented');
+function getCircleCircumference(radius) {
+  // eslint-disable-next-line no-return-assign, no-undef
+  return (number = 2 * Math.PI * radius);
 }
 
 /**
