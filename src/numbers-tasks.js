@@ -19,8 +19,7 @@
  *   5, 5  => 25
  */
 function getRectangleArea(width, height) {
-  // eslint-disable-next-line no-return-assign, no-undef
-  return (number = width * height);
+  return width * height;
 }
 
 /**
@@ -35,8 +34,7 @@ function getRectangleArea(width, height) {
  *   0    => 0
  */
 function getCircleCircumference(radius) {
-  // eslint-disable-next-line no-return-assign, no-undef
-  return (number = 2 * Math.PI * radius);
+  return 2 * Math.PI * radius;
 }
 
 /**
@@ -52,6 +50,8 @@ function getCircleCircumference(radius) {
  *  -3, 3  => 0
  */
 function getAverage(/* value1, value2 */) {
+  // !Erorr!
+  // return +(value1 + value2) / 2;
   throw new Error('Not implemented');
 }
 
