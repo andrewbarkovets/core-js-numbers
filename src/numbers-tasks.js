@@ -50,8 +50,9 @@ function getCircleCircumference(radius) {
  *  10, 0  => 5
  *  -3, 3  => 0
  */
-function getAverage(value1, value2) {
-  return +(value1 + value2) / 2;
+function getAverage(/* value1, value2 */) {
+  // return +(value1 + value2) / 2;
+  throw new Error('Not implemented');
 }
 
 /**
@@ -227,9 +228,9 @@ function isPrime(n) {
  *   toNumber(42, 0) => 42
  *   toNumber(new Number(42), 0) => 42
  */
-function toNumber(value, def) {
-  // eslint-disable-next-line no-use-before-define
-  return isNumber(value) === true ? def : value;
+function toNumber(/* value, def */) {
+  // return +value === true ? def : value;
+  throw new Error('Not implemented');
 }
 
 /**
@@ -260,8 +261,15 @@ function getCube(num) {
  *   3  => 2
  *   10 => 55
  */
-function getFibonacciNumber(/* index */) {
-  throw new Error('Not implemented');
+function getFibonacciNumber(index) {
+  let prev = 0;
+  let next = 1;
+  for (let i = 0; i < index; i++) {
+    const temp = next;
+    next = prev + next;
+    prev = temp;
+  }
+  return prev;
 }
 
 /**
