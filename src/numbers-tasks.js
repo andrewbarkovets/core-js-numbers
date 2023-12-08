@@ -51,7 +51,8 @@ function getCircleCircumference(radius) {
  *  -3, 3  => 0
  */
 function getAverage(/* value1, value2 */) {
-  // return +(value1 + value2) / 2;
+  // let sum = (value1 + value2) / 2;
+  // return +sum.toFixed();
   throw new Error('Not implemented');
 }
 
@@ -556,9 +557,8 @@ function getIntegerPartNumber(number) {
  * 1, 2, 3       => 6
  * 0.1, 0.2, 0.3 => 0.6
  */
-function getSumOfNumbers(/* x1, x2, x3 */) {
-  // return Math.abs(x1 + x2 + x3);
-  throw new Error('Not implemented');
+function getSumOfNumbers(x1, x2, x3) {
+  return +(x1 + x2 + x3).toFixed(2);
 }
 
 /**
